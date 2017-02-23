@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+}
+
+#title-color {
+    color: #00A79D;
+}
+
+#input-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#title-input{
+  width: 80%;
+}
+
+#enter-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  background-color: #E5F3F2;
+  width: 100%;
+}
+
+#display-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.level-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  background-color: #FFF;
+  border: none;
+}
+
+.level-btn:focus {
+  outline: 1px solid #00A79D;
+}
+
+#delete-button {
+  background: none;
+  border: none;
+  background-image: url('images/delete.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-top: 22px;
+}
+
+#delete-button:hover {
+  background-image: url('images/delete-hover.svg');
+}
+
+
+h1{
+  margin: 20px 0 0 0;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #6D6E71;
+  margin-bottom: 20px;
+}
+
+h2 {
+  max-width: 80%;
+  color: #6D6E71;
+}
+
+.item-card {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#title-input{
+  font-size: 12px;
+  width: 90%;
+}
+
+#body-input {
+  font-size: 24px;
+  width: 90%;
+  max-height: 80px;
+  min-height: 80px;
+  letter-spacing: 1px;
+  border: 2px solid #D1D3D4;
+  margin-bottom: 20px;
+}
+
+#line-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#card-body {
+  margin: 10px 0;
+  max-width: 90%;
+  color: #939598;
+  line-height: 25px;
+}
+
+#line-3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#line-4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D1D3D4;
+}
+
+p{
+  margin: 0;
+}
+
+#quality-line {
+  color: #6D6E71;
+}
+
+#save-button,
+#show-more-todos,
+#show-completed-task {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #00A79D;
+  border: none;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  height: 32px;
+  width: 90%;
+}
+
+#search-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#save-button:hover {
+    background: #045E55;
+}
+
+#save-button:disabled {
+    background: #6D6E71;
+}
+
+#search,
+#title-input {
+  font-size: 24px;
+  letter-spacing: 1px;
+  border: 2px solid #D1D3D4;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+#upvote-button {
+  background: none;
+  border: none;
+  background-image: url('images/upvote.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 50px;
+  margin-top: 22px;
+}
+
+#upvote-button:hover {
+  background-image: url('images/upvote-hover.svg');
+}
+
+#downvote-button {
+  background: none;
+  border: none;
+  background-image: url('images/downvote.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  margin-right: 10px;
+  height: 50px;
+  margin-top: 22px;
+}
+
+#downvote-button:hover {
+  background-image: url('images/downvote-hover.svg');
+}
+
+#completed-task {
+  border: 1px solid #A9A9A9;
+  padding: 5px;
+  width: 125px;
+}
+
+/*#show-completed-task {
+  display: flex;
+  align-self: center;
+}*/
+
+#show-more-todos {
+  border: 1px solid #A9A9A9;
+  padding: 5px;
+  width: 125px;
+  margin: 25px;
+}
+
+#level-buttons {
+  margin: 0px 0 10px 10px;
+}
+
+.task-btns {
+  background-color: #00A79D;
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 3px;
+  font-size: 90%;
+}
+
+.hide {
+  display: none;
+}
+
+
+.completed {
+  background-color: #afebed;
+}
+
+
+
+
+
+/***Media Queries***/
+
+/*@media screen and (min-width: 320px) {
+  #level-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+    #enter-div {
+      height: 400px;
+    }
+
+    #show-completed-task {
+      margin-top: 15px;
+      width: 95%;
+    }
+}*/
+/*
+@media screen and (min-width: 600px) {
+  #input-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .ninety {
+    border: solid 1px #D1D3D4;
+    width: 50vw;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  #body-input {
+    min-height: 0;
+    max-height: 26px;
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  .item-card {
+    margin:0 auto;
+    width: 50%;
+  }
+
+}*/
